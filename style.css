@@ -1,3 +1,5 @@
+/*formatações gerais*/
+
 .botao-roxo {
     color: white;
     font-weight: 400;
@@ -16,6 +18,12 @@
 a {
     text-decoration: none;
 }
+
+.pintar-cinza {
+    color: hsl(224, 23%, 55%);
+}
+
+/*Mobile first*/
 
 body {
     font-size: 16px;
@@ -84,19 +92,15 @@ body {
     transform: translate(-20%, 18%);
 }
 
+.plano-escolhido {
+    font-weight: 500;
+}
+
 .planos-container .trocar {
     transform: translate(90%, -300%);
     display: inline-block;
     border-bottom: 1px solid hsl(245, 75%, 52%);
     line-height: 0.80;
-}
-
-.plano-escolhido {
-    font-weight: 500;
-}
-
-.pintar-cinza {
-    color: hsl(224, 23%, 55%);
 }
 
 .planos-container .trocar:hover {
@@ -124,7 +128,10 @@ body {
     color: black;
 }
 
+/*versão desktop*/
+
 @media (min-width: 600px) {
+    
     body {
         background-image: url(images/pattern-background-desktop.svg);
     }
@@ -145,14 +152,14 @@ body {
         margin: 24px 30% 24px -8%;
     }
 
-.planos-container h3 {
-    transform: translate(-25%, 18%);
-}
+    .planos-container h3 {
+        transform: translate(-25%, 18%);
+    }
 
-.planos-container .trocar {
-    transform: translate(90%, -300%);
-    display: inline-block;
-    border-bottom: 1px solid hsl(245, 75%, 52%);
-    line-height: 0.80;
-}
+    .planos-container .trocar {
+        transform: translate(90%, -300%);
+        display: inline-block;
+        border-bottom: 1px solid hsl(245, 75%, 52%);
+        line-height: 0.80;
+    }
 }

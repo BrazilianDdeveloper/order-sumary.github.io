@@ -1,0 +1,130 @@
+.botao-roxo {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    background-color: hsl(245, 75%, 52%);
+    padding: 16px 20px;
+    text-align: center;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao-roxo:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', Arial, sans-serif, Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    
+}
+
+#card-unico {
+    height: 690px;
+    width: 26em;
+    margin: 100px 0;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.imagem-card {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 34%;
+}
+
+.card-conteudo {
+    padding: 0 40px;
+}
+
+.titulo-principal {
+    margin-top: 40px;
+    font-size: 1.8rem;
+}
+
+.sobre-o-plano {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.planos-container {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: 40px 0 30px 0;
+}
+
+.planos-container img {
+    float: left;
+    margin: 14px 20px;
+}
+
+.planos-container h3 {
+    transform: translate(-20%, 38%);
+}
+
+.planos-container .trocar {
+    transform: translate(100%, -250%);
+    display: inline-block;
+    border-bottom: 1px solid hsl(245, 75%, 52%);
+    line-height: 0.80;
+}
+
+.plano-escolhido {
+    font-weight: 500;
+}
+
+.pintar-cinza {
+    color: hsl(224, 23%, 55%);
+}
+
+.trocar:hover {
+    border: none;
+    line-height: 0.85;
+}
+
+.card-conteudo .botao-roxo {
+    border-radius: 15px;
+}
+
+.cancelar, .botao-roxo {
+    text-align: center;
+    display: block;
+}
+
+.cancelar {
+    margin-top: 20px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.cancelar:hover {
+    color: black;
+}
+
+@media (min-width: 800px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+}
+
+
+
+
+
+
+
+

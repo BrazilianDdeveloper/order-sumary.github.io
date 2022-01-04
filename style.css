@@ -1,12 +1,15 @@
-/*formatações gerais*/
+html, body {
+    font-size: 16px;
+}
 
 .botao-roxo {
     color: white;
     font-weight: 400;
     font-size: 1.25rem;
     background-color: hsl(245, 75%, 52%);
-    padding: 16px 20px;
-    width: 100%;
+    border-radius: 15px;
+    padding: 1rem 0.1rem;
+    width: 84%;
     text-align: center;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
 }
@@ -19,33 +22,33 @@ a {
     text-decoration: none;
 }
 
-.pintar-cinza {
-    color: hsl(224, 23%, 55%);
+body {
+    background-size: cover;
+    background-image: url(images/pattern-background-mobile.svg);
 }
 
-/*Mobile first*/
-
-body {
-    font-size: 16px;
+.div-geral{
     font-family: 'Red Hat Display', Arial, sans-serif, Helvetica;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/pattern-background-mobile.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%);
+    height: 100%;
 }
 
 #card-unico {
-    height: 69%;
-    width: 90vw;
-    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 6.25rem 0;
     border-radius: 20px;
     text-align: center;
     background-color: white;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem
 }
 
 .imagem-card {
@@ -55,14 +58,14 @@ body {
 }
 
 .card-conteudo {
-    padding: 0 40px;
+    padding: 0 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .titulo-principal {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     font-size: 1.8rem;
 }
 
@@ -75,32 +78,38 @@ body {
 .planos-container {
     background-color: hsl(225, 100%, 98%);
     border-radius: 10px;
-    margin: 40px 0 30px 0;
-    width: 110%;
+    margin: 2.5rem 0 1.875rem 0;
+    width: 84%;
+    height: 5rem;
     padding-right: 12%;
     padding-left: 12%;
     box-sizing: border-box;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
 }
 
 .planos-container img {
     float: left;
-    margin: 24px 16% 24px -10px;
+    display: block;
+    margin: 1.25rem 2rem 1.5rem -1.6rem;
 }
 
 .planos-container h3 {
-    transform: translate(-20%, 18%);
+    transform: translate(-20%, 50%);
+}
+
+.planos-container .trocar {
+    transform: translate(90%, -230%);
+    display: inline-block;
+    border-bottom: 1px solid hsl(245, 75%, 52%);
+    line-height: 0.80;
 }
 
 .plano-escolhido {
     font-weight: 500;
 }
 
-.planos-container .trocar {
-    transform: translate(90%, -300%);
-    display: inline-block;
-    border-bottom: 1px solid hsl(245, 75%, 52%);
-    line-height: 0.80;
+.pintar-cinza {
+    color: hsl(224, 23%, 55%);
 }
 
 .planos-container .trocar:hover {
@@ -118,7 +127,7 @@ body {
 }
 
 .cancelar {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     color: hsl(224, 23%, 55%);
     font-weight: 900;
     font-size: 1.1rem;
@@ -128,12 +137,12 @@ body {
     color: black;
 }
 
-/*versão desktop*/
+@media (min-width: 50rem) {
 
-@media (min-width: 600px) {
-    
     body {
         background-image: url(images/pattern-background-desktop.svg);
+        background-size: cover;
+        background-position: right;
     }
 
     #card-unico {
@@ -143,13 +152,13 @@ body {
     .planos-container {
         background-color: hsl(225, 100%, 98%);
         border-radius: 10px;
-        margin: 40px 0 30px 0;
-        width: 100%;
+        margin: 2.5rem 0 1.875 0;
+        width: 22rem;
     }
 
     .planos-container img {
         float: left;
-        margin: 24px 30% 24px -8%;
+        margin: 1.5rem 30% 1.5rem -8%;
     }
 
     .planos-container h3 {
@@ -162,4 +171,22 @@ body {
         border-bottom: 1px solid hsl(245, 75%, 52%);
         line-height: 0.80;
     }
+}
+
+/*suporte para galaxy fold*/
+
+@media (max-width: 17.5rem) {
+
+    .planos-container {
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 10px;
+        margin: 2.5rem 0 1.875 0;
+        width: 12rem;
+        
+    }
+
+    .planos-container img {
+        float: left;
+    }
+
 }
